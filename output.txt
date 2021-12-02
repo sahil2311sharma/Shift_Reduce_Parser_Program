@@ -1,0 +1,21 @@
+Enter how many Grammer you have :4
+
+Our production rules are: 
+S 2M2
+S 3S3
+M 4
+S 5S3
+
+Enter Input: 32425$
+
+Element		stack		Action
+3			3			    Shift
+2			23			    Shift
+4			423			  Reduce 4 by M  
+2			2M23			Reduce 2M2 by S    
+5			5S3			   Reduce 5S3 by S 
+$			$S			    Shift
+
+Last Action: S
+Last Element in Stack: S$
+Accepted
